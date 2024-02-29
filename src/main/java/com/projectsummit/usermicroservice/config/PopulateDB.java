@@ -21,11 +21,11 @@ public class PopulateDB {
             // Create an ArrayList to hold User objects
             List<User> users = new ArrayList<>();
 
-            users.add(new User("John", "Doe", new Date(90, 0, 1), "Male", "Regular", "john@example.com"));
-            users.add(new User("Alice", "Smith", new Date(88, 5, 15), "Female", "Regular", "alice@example.com"));
-            users.add(new User("Bob", "Johnson", new Date(92, 8, 20), "Male", "Regular", "bob@example.com"));
-            users.add(new User("Emily", "Brown", new Date(87, 11, 5), "Female", "Regular", "emily@example.com"));
-            users.add(new User("Michael", "Wilson", new Date(91, 2, 10), "Male", "Regular", "michael@example.com"));
+            users.add(new User("John", "Doe", new Date(90, 0, 1), "Male", "Customer", "john@example.com"));
+            users.add(new User("Alice", "Smith", new Date(88, 5, 15), "Female", "Seller", "alice@example.com"));
+            users.add(new User("Bob", "Johnson", new Date(92, 8, 20), "Male", "Admin", "bob@example.com"));
+            users.add(new User("Emily", "Brown", new Date(87, 11, 5), "Female", "Customer", "emily@example.com"));
+            users.add(new User("Michael", "Wilson", new Date(91, 2, 10), "Male", "Seller", "michael@example.com"));
 
             userDAO.saveAll(users);
 
